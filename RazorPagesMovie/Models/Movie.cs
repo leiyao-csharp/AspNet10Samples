@@ -12,6 +12,7 @@ public class Movie
 
     [Display(Name = "Release Date")]
     [DataType(DataType.Date)]
+    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
     public DateTime ReleaseDate { get; set; }
 
     [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
@@ -22,7 +23,6 @@ public class Movie
     [Range(1, 100)]
     [DataType(DataType.Currency)]
     [Column(TypeName = "decimal(18, 2)")]
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
     public decimal Price { get; set; }
 
     [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
