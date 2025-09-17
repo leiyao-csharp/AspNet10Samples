@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="BlazorSample/BlazorSample.csproj" />
+  <Project Path="MvcMovie/MvcMovie.csproj" Id="c44df4fe-4351-4c84-a8e5-78450a352407" />
   <Project Path="RazorPagesMovie/RazorPagesMovie.csproj" Id="d0ed7d55-fb13-4891-a7a2-c867f230ca56" />
 </Solution>
